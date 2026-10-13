@@ -3,10 +3,771 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopSmart IS</title>
-    <link rel="stylesheet" href="Style.css">
+    <title>SmartRetail SA | Information Systems Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+   
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">SmartRetail <span>SA</span></a>
+
+            <button class="menu-button" id="menuButton"
+                    aria-label="Open navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="mainNav">
+                <a href="#home">Home</a>
+                <a href="#data">Data Management</a>
+                <a href="#popia">POPIA</a>
+                <a href="#ai">AI & Decisions</a>
+                <a href="#systems">Integration</a>
+                <a href="#customisation">Customisation</a>
+                <a href="#quiz">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">INFORMATION SYSTEMS • SMALL BUSINESS</p>
+                    <h1>Helping South African retailers make <span>smarter decisions.</span></h1>
+                    <p class="hero-description">
+                        A practical guide to using information systems to manage stock,
+                        protect customer information, understand business performance
+                        and prepare for growth.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#data" class="button button-primary">Explore the Guide</a>
+                        <a href="#dashboard" class="button button-outline">View Sample Dashboard</a>
+                    </div>
+                    <p class="small-note">Designed for retail owners, managers and staff with limited IT knowledge.</p>
+                </div>
+
+                <div class="hero-card">
+                    <h3>Why go digital?</h3>
+                    <div class="benefit">
+                        <span class="benefit-icon">✓</span>
+                        <div>
+                            <strong>Better stock control</strong>
+                            <p>Know what is selling and what needs reordering.</p>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">✓</span>
+                        <div>
+                            <strong>Reliable information</strong>
+                            <p>Reduce errors caused by duplicate or outdated records.</p>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">✓</span>
+                        <div>
+                            <strong>Confident decisions</strong>
+                            <p>Use useful reports instead of guesswork.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">THE BUSINESS CHALLENGE</p>
+                    <h2>From paperwork to smarter retail</h2>
+                    <p>
+                        Imagine a small South African shop that records sales in a spreadsheet,
+                        counts stock manually and keeps customer details in paper files.
+                        These methods may work at first, but errors and delays become more
+                        likely as the business grows.
+                    </p>
+                </div>
+
+                <div class="card-grid three-columns">
+                    <article class="info-card">
+                        <div class="card-icon">📦</div>
+                        <h3>Inventory problems</h3>
+                        <p>Staff may sell products that are out of stock or order items that are not needed.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="card-icon">📋</div>
+                        <h3>Scattered records</h3>
+                        <p>Different spreadsheets can contain conflicting customer, sales and supplier information.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="card-icon">📊</div>
+                        <h3>Slow decisions</h3>
+                        <p>Managers may not know which products are profitable until they manually prepare reports.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light" id="data">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">TOPIC 1 • MAIN FOCUS</p>
+                    <h2>Data and Information Management</h2>
+                    <p>
+                        Data management is the process of collecting, checking, storing,
+                        organising, protecting and using business data. It is especially
+                        important for a retailer because stock, sales, suppliers and finances
+                        all depend on accurate information.
+                    </p>
+                </div>
+
+                <div class="content-layout">
+                    <div>
+                        <h3>What is the difference between data and information?</h3>
+                        <p>
+                            <strong>Data</strong> consists of raw facts, such as a product code,
+                            quantity sold or selling price. <strong>Information</strong> is data
+                            that has been organised so that it becomes useful.
+                        </p>
+                        <div class="example-box">
+                            <strong>Retail example</strong>
+                            <p><b>Data:</b> 40 loaves of bread sold on Monday.</p>
+                            <p><b>Information:</b> Bread sales are higher on Mondays, so the shop
+                            should consider ordering more bread before the weekend or busy periods,
+                            based on its actual sales pattern.</p>
+                        </div>
+                        <p>
+                            Good information helps managers answer questions such as:
+                            What is selling? What is running low? Which products generate
+                            the most gross profit? Are sales improving?
+                        </p>
+                    </div>
+
+                    <div class="side-card">
+                        <h3>Important retail data</h3>
+                        <ul class="check-list">
+                            <li>Product names, codes and prices</li>
+                            <li>Stock quantities and reorder levels</li>
+                            <li>Sales dates, quantities and totals</li>
+                            <li>Supplier details and purchase orders</li>
+                            <li>Expenses, payments and financial records</li>
+                            <li>Customer details, where genuinely needed</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="subheading">The data management lifecycle</h3>
+                <p>Information should be managed carefully from the moment it is collected until it is securely deleted or archived.</p>
+
+                <div class="lifecycle-grid">
+                    <article class="lifecycle-card">
+                        <span>01</span>
+                        <h4>Collect</h4>
+                        <p>Record sales, deliveries and stock counts at the source.</p>
+                    </article>
+                    <article class="lifecycle-card">
+                        <span>02</span>
+                        <h4>Validate</h4>
+                        <p>Check product codes, dates, quantities and prices for errors.</p>
+                    </article>
+                    <article class="lifecycle-card">
+                        <span>03</span>
+                        <h4>Store</h4>
+                        <p>Keep records in an organised system with controlled access and backups.</p>
+                    </article>
+                    <article class="lifecycle-card">
+                        <span>04</span>
+                        <h4>Process</h4>
+                        <p>Calculate totals, update stock and prepare reports.</p>
+                    </article>
+                    <article class="lifecycle-card">
+                        <span>05</span>
+                        <h4>Analyse</h4>
+                        <p>Find sales patterns, stock problems and business trends.</p>
+                    </article>
+                    <article class="lifecycle-card">
+                        <span>06</span>
+                        <h4>Use & retain</h4>
+                        <p>Share reports appropriately and retain or delete records according to business and legal requirements.</p>
+                    </article>
+                </div>
+
+                <h3 class="subheading">Information quality: garbage in, garbage out</h3>
+                <p>
+                    A system cannot produce reliable reports from poor-quality data.
+                    If employees enter incorrect prices or forget to record deliveries,
+                    the dashboard may look professional but still mislead the owner.
+                </p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Quality principle</th>
+                                <th>What it means</th>
+                                <th>Retail example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Accuracy</td>
+                                <td>Records reflect reality.</td>
+                                <td>Recorded stock matches the physical count.</td>
+                            </tr>
+                            <tr>
+                                <td>Completeness</td>
+                                <td>Required fields are filled in.</td>
+                                <td>Sales have a date, quantity and product code.</td>
+                            </tr>
+                            <tr>
+                                <td>Consistency</td>
+                                <td>Records agree across systems.</td>
+                                <td>The stock system and sales report use the same product code.</td>
+                            </tr>
+                            <tr>
+                                <td>Timeliness</td>
+                                <td>Information is up to date.</td>
+                                <td>New deliveries are recorded promptly.</td>
+                            </tr>
+                            <tr>
+                                <td>Validity</td>
+                                <td>Data follows the required rules.</td>
+                                <td>A product quantity cannot be entered as text or a negative value by mistake.</td>
+                            </tr>
+                            <tr>
+                                <td>Uniqueness</td>
+                                <td>Unnecessary duplicates are avoided.</td>
+                                <td>Each product has one unique stock code.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="example-box">
+                    <h4>Practical example: fixing a stock discrepancy</h4>
+                    <p>
+                        The spreadsheet says there are 25 tins of beans, but a physical count
+                        finds only 19. Staff should recount the shelf and storage area, check
+                        recent sales and deliveries, investigate damaged goods or unrecorded
+                        transactions, correct the record with an explanation, and review the
+                        process that caused the mismatch.
+                    </p>
+                    <p>
+                        The lesson is not simply to change 25 to 19. The business should also
+                        find out why the difference happened, so that it is less likely to happen again.
+                    </p>
+                </div>
+
+                <h3 class="subheading">Data visualisation and dashboards</h3>
+                <p>
+                    Data visualisation presents information using charts, graphs and other
+                    visual formats. A dashboard brings important measures together on one
+                    screen so a manager can quickly understand business performance.
+                </p>
+
+                <div class="card-grid three-columns">
+                    <article class="info-card">
+                        <h3>Bar chart</h3>
+                        <p>Compare sales between product categories or branches.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Line chart</h3>
+                        <p>Track sales over days, weeks or months to identify trends.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Stock alert</h3>
+                        <p>Highlight products below their reorder levels.</p>
+                    </article>
+                </div>
+
+                <h3 class="subheading" id="dashboard">Try the sample retail dashboard</h3>
+                <p>
+                    Change the filters to explore how a manager could review different
+                    periods and product categories. The figures are fictional and are included
+                    only to demonstrate dashboard design.
+                </p>
+
+                <div class="dashboard">
+                    <div class="dashboard-header">
+                        <div>
+                            <p class="eyebrow">SMARTRETAIL SA</p>
+                            <h3>Retail Performance Overview</h3>
+                            <p class="small-note">Demonstration data • Not connected to a live store</p>
+                        </div>
+                        <div class="filter-group">
+                            <label for="periodFilter">Period</label>
+                            <select id="periodFilter">
+                                <option value="all">All periods</option>
+                                <option value="0">January</option>
+                                <option value="1">February</option>
+                                <option value="2">March</option>
+                                <option value="3">April</option>
+                                <option value="4">May</option>
+                                <option value="5">June</option>
+                            </select>
+                            <label for="categoryFilter">Category</label>
+                            <select id="categoryFilter">
+                                <option value="all">All categories</option>
+                                <option value="Groceries">Groceries</option>
+                                <option value="Household">Household</option>
+                                <option value="Personal Care">Personal care</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <p>Total sales</p>
+                            <h3 id="salesKpi">R0</h3>
+                        </div>
+                        <div class="kpi-card">
+                            <p>Gross profit</p>
+                            <h3 id="profitKpi">R0</h3>
+                        </div>
+                        <div class="kpi-card">
+                            <p>Gross margin</p>
+                            <h3 id="marginKpi">0%</h3>
+                        </div>
+                        <div class="kpi-card">
+                            <p>Units sold</p>
+                            <h3 id="unitsKpi">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <div class="chart-card">
+                            <h4>Sales by month</h4>
+                            <div id="salesBars" class="bar-chart" aria-label="Sales by month"></div>
+                        </div>
+                        <div class="chart-card">
+                            <h4>Sales by category</h4>
+                            <div id="categoryMix" class="category-chart"></div>
+                        </div>
+                    </div>
+                    <div class="insight-box">
+                        <strong>Manager's takeaway</strong>
+                        <p id="dashboardInsight">Choose a filter to explore the demonstration data.</p>
+                    </div>
+                </div>
+
+                <h3 class="subheading">Choosing a system for a growing retailer</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Advantages</th>
+                                <th>Limitations</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Paper records</td>
+                                <td>Low technology cost and familiar to staff.</td>
+                                <td>Harder to search, analyse and share; vulnerable to loss or damage.</td>
+                            </tr>
+                            <tr>
+                                <td>Spreadsheets</td>
+                                <td>Affordable, flexible and useful for basic calculations.</td>
+                                <td>Version conflicts, formula errors and limited controls as the business grows.</td>
+                            </tr>
+                            <tr>
+                                <td>Retail or inventory software</td>
+                                <td>Can connect sales and stock records, automate reports and reduce duplicate entry.</td>
+                                <td>Subscription or setup costs, training, migration and internet or vendor dependence may apply.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Practical recommendation</strong>
+                    <p>
+                        Start by standardising product codes, recording every sale and delivery,
+                        backing up records and performing regular stock counts. Then compare
+                        affordable retail systems against the business's needs, budget and staff
+                        skills before purchasing.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="popia">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">TOPIC 2</p>
+                    <h2>Data Ethics, Privacy and POPIA</h2>
+                    <p>
+                        Retailers may handle names, phone numbers, delivery addresses,
+                        loyalty programme details and purchase histories. Personal information
+                        must be handled responsibly and in accordance with applicable law.
+                    </p>
+                </div>
+
+                <div class="content-layout">
+                    <div>
+                        <h3>What is POPIA?</h3>
+                        <p>
+                            The Protection of Personal Information Act (POPIA) is South Africa's
+                            data protection law. It sets requirements for how responsible parties
+                            process personal information. Businesses should understand their
+                            obligations and seek appropriate advice where needed.
+                        </p>
+                        <h3>What is data ethics?</h3>
+                        <p>
+                            Data ethics means using information fairly, honestly and responsibly.
+                            A business should not collect personal information just because it can.
+                            It should have a legitimate purpose, limit access and avoid unfair
+                            treatment of customers.
+                        </p>
+                    </div>
+                    <div class="side-card">
+                        <h3>Retail privacy example</h3>
+                        <p>
+                            If a customer gives a phone number to receive an order update,
+                            the shop should not automatically assume that the customer has
+                            agreed to unrelated marketing messages.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="subheading">A practical privacy checklist</h3>
+                <p>Use this checklist to review basic privacy practices. It is an educational aid, not a legal compliance certificate.</p>
+
+                <div class="checklist-card">
+                    <div class="check-item">
+                        <input type="checkbox" id="privacy1" class="privacy-check">
+                        <label for="privacy1">Collect only the personal information needed for a clear purpose.</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="privacy2" class="privacy-check">
+                        <label for="privacy2">Explain to customers why their information is collected and how it is used.</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="privacy3" class="privacy-check">
+                        <label for="privacy3">Restrict access to customer and financial records to authorised staff.</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="privacy4" class="privacy-check">
+                        <label for="privacy4">Use strong passwords, appropriate security and secure backups.</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="privacy5" class="privacy-check">
+                        <label for="privacy5">Have a process for correcting information and handling privacy requests.</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="privacy6" class="privacy-check">
+                        <label for="privacy6">Know how to report and respond to suspected data breaches.</label>
+                    </div>
+                    <div class="progress-track">
+                        <div id="privacyProgress" class="progress-fill"></div>
+                    </div>
+                    <p id="privacyProgressText" class="small-note">0 of 6 practices reviewed</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Remember</strong>
+                    <p>
+                        POPIA compliance requires more than ticking a checklist. Responsibilities
+                        depend on how the business processes information. Consult the official
+                        Act and Information Regulator for authoritative guidance.
+                    </p>
+                </div>
+
+                <p class="resource-links">
+                    Official resources:
+                    <a href="https://www.gov.za/documents/protection-personal-information-act" target="_blank" rel="noopener noreferrer">POPIA on the South African Government website</a>
+                    ·
+                    <a href="https://inforegulator.org.za/" target="_blank" rel="noopener noreferrer">Information Regulator</a>
+                </p>
+            </div>
+        </section>
+
+      
+        <section class="section section-light" id="ai">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">TOPIC 3</p>
+                    <h2>Artificial Intelligence and Decision Support</h2>
+                    <p>
+                        AI can identify patterns and make predictions from data.
+                        A decision support system helps people compare information and
+                        alternatives before making a decision. These tools can support a
+                        retailer, but the owner remains responsible for important decisions.
+                    </p>
+                </div>
+
+                <div class="card-grid three-columns">
+                    <article class="info-card">
+                        <div class="card-icon">📈</div>
+                        <h3>Demand forecasting</h3>
+                        <p>Estimate future demand using previous sales, seasonal trends and other relevant data.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="card-icon">🔔</div>
+                        <h3>Stock alerts</h3>
+                        <p>Flag items that may run out soon or have remained unsold for a long time.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="card-icon">💬</div>
+                        <h3>Customer support</h3>
+                        <p>Use carefully managed chat tools to answer common questions or direct customers to staff.</p>
+                    </article>
+                </div>
+
+                <h3 class="subheading">Example: should the shop reorder cold drinks?</h3>
+                <div class="example-box">
+                    <p>
+                        A decision support system could compare recent sales, current stock,
+                        supplier delivery time and expected demand. It might recommend ordering
+                        more drinks before a busy period. The manager should still check the
+                        recommendation, available budget, expiry dates and supplier reliability.
+                    </p>
+                </div>
+
+                <h3 class="subheading">Benefits and risks</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Potential benefit</th>
+                                <th>Possible risk</th>
+                                <th>Responsible practice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Faster analysis</td>
+                                <td>Incorrect results from poor data</td>
+                                <td>Check data quality and test results.</td>
+                            </tr>
+                            <tr>
+                                <td>Improved forecasts</td>
+                                <td>Unexpected events can make forecasts wrong.</td>
+                                <td>Compare predictions with actual sales.</td>
+                            </tr>
+                            <tr>
+                                <td>More personalised service</td>
+                                <td>Privacy concerns or unfair profiling</td>
+                                <td>Limit personal data and review how it is used.</td>
+                            </tr>
+                            <tr>
+                                <td>Automation of routine tasks</td>
+                                <td>Cost, staff concerns or over-reliance</td>
+                                <td>Train staff and keep human oversight.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tip-box">
+                    <strong>Start small</strong>
+                    <p>
+                        Before buying an AI tool, identify one business problem, estimate its
+                        cost, test the tool on suitable data and measure whether it improves
+                        results. AI should support good management, not replace it.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     
+        <section class="section" id="systems">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">TOPIC 4</p>
+                    <h2>Enterprise Systems and Integration</h2>
+                    <p>
+                        As a retailer grows, it may use separate tools for sales, stock,
+                        accounting, purchasing and customer records. Integration allows
+                        systems to exchange information instead of requiring staff to
+                        repeatedly enter the same data.
+                    </p>
+                </div>
+
+                <div class="integration-diagram">
+                    <div class="system-box main-system">
+                        <strong>Retail sales system</strong>
+                        <span>Records each sale</span>
+                    </div>
+                    <div class="diagram-arrow">↓</div>
+                    <div class="system-row">
+                        <div class="system-box">
+                            <strong>Inventory</strong>
+                            <span>Updates stock</span>
+                        </div>
+                        <div class="system-box">
+                            <strong>Accounting</strong>
+                            <span>Records transactions</span>
+                        </div>
+                        <div class="system-box">
+                            <strong>Reporting</strong>
+                            <span>Summarises results</span>
+                        </div>
+                    </div>
+                    <p class="small-note">Illustration: a connected system can share data between business functions.</p>
+                </div>
+
+                <h3 class="subheading">Common integration challenges</h3>
+                <div class="card-grid two-columns">
+                    <article class="info-card">
+                        <h3>Different formats</h3>
+                        <p>One system may use a product code while another uses a product name. Agree on common formats and identifiers.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Migration errors</h3>
+                        <p>Old spreadsheets may contain duplicates or missing fields. Clean and test records before moving them.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Cost and disruption</h3>
+                        <p>Setup, subscriptions, training and downtime can affect daily operations. Plan a phased rollout.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Security and access</h3>
+                        <p>Connecting systems creates a need for access controls, secure configuration, backups and monitoring.</p>
+                    </article>
+                </div>
+
+                <div class="example-box">
+                    <h4>Example: one sale, several updates</h4>
+                    <p>
+                        When a customer buys two packets of rice, an integrated retail system
+                        can record the sale, reduce stock by two and pass the transaction to
+                        accounting or reporting tools. The owner spends less time entering
+                        the same information in different places. The business must still
+                        check that the connections are configured correctly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+     
+        <section class="section section-light" id="customisation">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">TOPIC 5</p>
+                    <h2>Adapting and Customising Information Systems</h2>
+                    <p>
+                        A small retailer should choose a system that fits its products,
+                        staff, budget and way of working. Customisation means changing
+                        settings or features to meet business needs; it does not always
+                        require writing new software.
+                    </p>
+                </div>
+
+                <div class="card-grid three-columns">
+                    <article class="info-card">
+                        <h3>Configure settings</h3>
+                        <p>Set up product categories, tax settings, user permissions, receipt details and reorder alerts.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Adapt workflows</h3>
+                        <p>Decide who records deliveries, approves purchases and checks stock differences.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Add features carefully</h3>
+                        <p>Consider barcode scanning, loyalty tools or extra reports only when they solve a real problem.</p>
+                    </article>
+                </div>
+
+                <h3 class="subheading">A sensible implementation plan</h3>
+                <div class="roadmap">
+                    <div class="roadmap-step">
+                        <span>1</span>
+                        <div><h4>Identify the problem</h4><p>Ask staff where errors and delays happen most often.</p></div>
+                    </div>
+                    <div class="roadmap-step">
+                        <span>2</span>
+                        <div><h4>Set requirements</h4><p>List essential features, budget limits, security needs and reporting requirements.</p></div>
+                    </div>
+                    <div class="roadmap-step">
+                        <span>3</span>
+                        <div><h4>Compare options</h4><p>Check total cost, support, ease of use, integration and future growth.</p></div>
+                    </div>
+                    <div class="roadmap-step">
+                        <span>4</span>
+                        <div><h4>Test and train</h4><p>Run a small pilot, check results and train staff before a full rollout.</p></div>
+                    </div>
+                    <div class="roadmap-step">
+                        <span>5</span>
+                        <div><h4>Review and improve</h4><p>Measure errors, time saved, stock accuracy and staff feedback.</p></div>
+                    </div>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Do not over-customise</strong>
+                    <p>
+                        Too many changes can increase costs, complicate upgrades and make
+                        staff training harder. Begin with essential settings and add features
+                        only when there is a clear business benefit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+      
+        <section class="section" id="quiz">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">CHECK YOUR UNDERSTANDING</p>
+                    <h2>Quick knowledge quiz</h2>
+                    <p>Test what you have learned about information systems in retail.</p>
+                </div>
+
+                <div class="quiz-card">
+                    <div class="quiz-top">
+                        <span id="quizCounter">Question 1 of 5</span>
+                        <span id="quizScore">Score: 0</span>
+                    </div>
+                    <h3 id="quizQuestion">Loading question...</h3>
+                    <div id="quizOptions" class="quiz-options"></div>
+                    <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+                    <button id="nextQuestion" class="button button-primary" disabled>Next question</button>
+                    <button id="restartQuiz" class="button button-outline hidden">Try again</button>
+                </div>
+            </div>
+        </section>
+
+     
+        <section class="section section-light" id="conclusion">
+            <div class="container conclusion">
+                <p class="eyebrow">PUTTING KNOWLEDGE INTO PRACTICE</p>
+                <h2>Small improvements can support big growth.</h2>
+                <p>
+                    A retailer does not need to digitise everything at once. Reliable data,
+                    secure practices, useful reports and well-chosen systems can create a
+                    stronger foundation for growth. Technology works best when it fits the
+                    people and processes of the business.
+                </p>
+
+                <h3 class="subheading">Further reading</h3>
+                <ul class="resource-list">
+                    <li><a href="https://inforegulator.org.za/" target="_blank" rel="noopener noreferrer">Information Regulator South Africa</a> — privacy guidance and resources.</li>
+                    <li><a href="https://www.gov.za/documents/protection-personal-information-act" target="_blank" rel="noopener noreferrer">Protection of Personal Information Act</a> — official South African Government resource.</li>
+                    <li><a href="https://www.seda.org.za/" target="_blank" rel="noopener noreferrer">Small Enterprise Development Agency (SEDA)</a> — small-business support and resources.</li>
+                </ul>
+                <p class="small-note">
+                    Academic note: Use the sources above as starting points. Add any prescribed
+                    textbooks and additional sources required by your lecturer, and cite claims
+                    in the format specified by your institution.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <a href="#home" class="logo footer-logo">SmartRetail <span>SA</span></a>
+                <p>A practical information systems guide for small South African retailers.</p>
+            </div>
+            <p>INF1781 Project • Educational resource</p>
+            <p>© <span id="currentYear"></span> SmartRetail SA</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
 </body>
 </html>
