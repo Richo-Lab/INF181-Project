@@ -29,12 +29,12 @@ No installation or build step is needed.
 
 ## Team
 
-| Member |Student Number| Contribution |
+| Member |Student Number|
 |---|---|---|
-| [ Unknown ] | | Retail problems, requirements, customisation and coordination |
-| Nduna Ntshalintshali | 605045 | Information quality, dashboards and retail data |
-| Richo Labuschagne | 601759 | AI applications, decisions, privacy, ethics and POPIA |
-| [ Unknown ] | | OS, inventory, CRM, accounting and website assembly |
+| Liam Ethan Venter | 603434 |
+| Nduna Ntshalintshali | 605045 |
+| Richo Labuschagne | 601759 |
+|  Jeru Dumas | 606800 |
 
 ## ⚠️ Academic Integrity
 
