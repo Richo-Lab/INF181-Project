@@ -30,7 +30,7 @@ No installation or build step is needed.
 ## Team
 
 | Member |Student Number|
-|---|---|---|
+|---|---|
 | Liam Ethan Venter | 603434 |
 | Nduna Ntshalintshali | 605045 |
 | Richo Labuschagne | 601759 |
